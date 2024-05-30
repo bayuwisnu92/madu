@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: white;
+}
+.card-title{
+    color: white;
+}
+.card-text{
+    color: white;
+}
+.card-body{
+    background-color: black;
+}
