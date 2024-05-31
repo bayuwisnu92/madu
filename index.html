@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madu murni Melifera</title>
+  <title>Madu Murni Melifera</title>
+  <link rel="icon" href="lebahmadu.jpeg" type="image/png">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
@@ -16,7 +17,7 @@
       z-index: 1000;
       background-color: #28a745;
       color: white;
-      border-radius: 10%;
+      border-radius: 50%;
       width: 10px;
       height: 10px;
       display: flex;
@@ -28,11 +29,39 @@
     .floating-btn:hover {
       background-color: #218838;
     }
+    .navbar-custom {
+      background-color: black; /* Warna latar belakang hitam */
+      top: 0;
+      position: sticky;
+      z-index: 1000;
+      border: #f1ecec solid 1px;
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #fff; /* Warna teks putih */
+    }
+    .navbar-custom .nav-link:hover {
+      color: #ddd; /* Warna teks saat hover menjadi abu-abu terang */
+    }
+    .navbar-custom .navbar-toggler-icon {
+      filter: invert(100%); /* Membuat ikon toggle menjadi putih */
+    }
+    .navbar-custom .btn-outline-success {
+      color: #fff; /* Warna teks tombol putih */
+      border-color: #fff; /* Warna border tombol putih */
+    }
+    .navbar-custom .btn-outline-success:hover {
+      background-color: #fff;
+      color: #000;
+    }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="lebahmadu.jpeg" alt="" width="50px" height="30px"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">
+      <img src="lebahmadu.jpeg" alt="Logo" width="50" height="30">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,19 +80,22 @@
       </form>
     </div>
   </nav>
+
+  <!-- Main Content -->
   <div class="container mt-4">
     <div class="row">
+      <!-- Left Column (Main Article) -->
       <div class="col-lg-8" id="manfaatmadu">
         <div class="mb-4">
-            <img src="1.jpg" class="img-fluid" alt="Madu">
-          </div>
-        <h1 id="manfaatmadu">Manfaat Madu Melifera</h1>
-            <p>Indonesia telah dikenal memiliki berbagai jenis lebah lokal. Salah satu lebah lokal yang dikenal masyarakat adalah lebah madu jenis Apis mellifera spp. Lebah madu menghasilkan beberapa produk yang memiliki kegunaan baik untuk lebah itu sendiri maupun untuk manusia. Hasil produknya antara lain madu, royal jelly, tepung sari atau polen, lem lebah atau propolis, malam lebah atau beeswax, dan racun lebah atau beevenom. Kandungan aktif pada madu terdiri dari polyphenolic compound lebih dari 150 substansi termasuk phenolic acid, flavonoids, flavonols, catechins, dan derivate cinnamic acid.</p>
+          <img src="1.jpg" class="img-fluid" alt="Madu">
+        </div>
+        <h1>Madu Melifera</h1>
+        <p>Indonesia telah dikenal memiliki berbagai jenis lebah lokal. Salah satu lebah lokal yang dikenal masyarakat adalah lebah madu jenis Apis mellifera spp. Lebah madu menghasilkan beberapa produk yang memiliki kegunaan baik untuk lebah itu sendiri maupun untuk manusia. Hasil produknya antara lain madu, royal jelly, tepung sari atau polen, lem lebah atau propolis, malam lebah atau beeswax, dan racun lebah atau beevenom. Kandungan aktif pada madu terdiri dari polyphenolic compound lebih dari 150 substansi termasuk phenolic acid, flavonoids, flavonols, catechins, dan derivate cinnamic acid.</p>
             <p>Flavonoid merupakan senyawa kimia yang bersifat antibakteri, antifungal, antiviral, antioksidan dan anti inflamasi. Flavonoid juga memiliki peran dalam melindungi tulang melalui mekanisme: i) aktivasi antioksidan, ii) agen anti inflamasi yang berkorelasi pada cedera tulang, iii) agen pro-osteoblastik, iv) antiosteoklastogenesis, v) melalui tindakan osteoimunologi. Polifenol dan saponin juga berpengaruh pada aktivasi osteoblas yang mengarah ke perbaikan tulang.</p>
             <p>Tulang manusia sebagai bagian dari sistem gerak adalah jaringan yang kaku dan kuat, dengan salah satu fungsi menopang tubuh. Namun, bila mendapat tekanan dari luar yang melebihi kekuatannya, tulang dapat patah. Kondisi ini yang kemudian disebut dengan fraktur atau patah tulang. Tekanan dari luar tersebut umumnya terjadi saat Anda mengalami jatuh, kecelakaan, atau bentuk cedera lainnya. Namun, penyebab fraktur juga bisa berupa kondisi medis tertentu yang melemahkan tulang, seperti osteoporosis. Osteoporosis saat ini menjadi salah satu masalah kesehatan global. Bahkan, Osteoporosis telah menjadi 10 penyakit degeneratif teratas di dunia oleh Organisasi Kesehatan Dunia (WHO). Pasien osteoporosis memiliki peningkatan resiko patah tulang 2 hingga 3 kali lipat lebih besar dibandingkan dengan tulang normal jika terjadi trauma ringan.</p>
             <p>Pada dasarnya, semua makanan yang sehat dan bergizi mampu membantu pemulihan kondisi patah tulang atau gangguan pada struktur tulang yang Anda alami. Namun, ada beberapa makanan dengan zat gizi tertentu yang diperlukan dalam jumlah lebih agar kondisi tulang Anda cepat membaik. Mengonsumsi makanan yang bernutrisi tinggi untuk tulang akan sangat mendukung proses pemulihan patah tulang yang tengah Anda alami.</p>
             <p>Dilatarbelakangi permasalahan tersebut, Dr. Dian Agustin Wahjuningrum, drg.,SpKG(K) melakukan sebuah penelitian. Hasilnya menggembirakan, ternyata madu lebah Apis Melifera berpotensi menjadi obat anti-osteoporosis. “Madu mengandung α-Cyclodextrin yang memiliki efek prebiotik menurunkan aktivitas penyerapan jaringan tulang,” jelasnya. Penelitian yang dilakukan dosen Fakultas Kedokteran Gigi (FKG) Universitas Airlangga (UNAIR) itu telah diujikan pada hewan tikus yang diambil indung telurnya sebagai model menopause. Sehingga terjadi penurunan esterogen secara drastis dan memicu osteoporosis. Dari hasil penelitian, diketahui suplemen madu Apis Melifera dapat menghambat penurunan ketebalan tulang kortikal dan memperbaiki kerusakan tulang. Sehingga tulang tidak mudah patah. “Pemberian madu 2g/Kg berat badan terbukti mampu mencegah penurunan densitas tulang dan meningkatkan kekuatan tulang sehingga tidak mudah patah atau retak,” katanya. Hal ini membuka peluang pemanfaatan Madu Apis Melifera sebagai agen perbaikan tulang.</p>
-        <h1 >rangkuman manfaat madu melifera</h1>
+        <h1>Rangkuman Manfaat Madu Melifera</h1>
         <ul>
           <li>Antibakteri, antifungal, antiviral, antioksidan, dan anti inflamasi.</li>
           <li>Melindungi tulang melalui aktivasi antioksidan dan agen anti inflamasi.</li>
@@ -76,38 +108,75 @@
           <li>Mencegah penurunan densitas tulang dan meningkatkan kekuatan tulang.</li>
         </ul>
       </div>
+
+      <!-- Right Column (Product Cards) -->
       <div class="col-lg-4">
-        
-        
+        <!-- Product Card 1 -->
         <div class="col">
-            <div class="card">
-              <img src="2.jpg" class="card-img-top" alt="Madu 1">
-              <div class="card-body">
-                <h5 class="card-title">Madu Melifera 500g</h5>
-                <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
-                <p class="card-text"><strong>Harga: Rp 80.000</strong></p>
-                <a href="https://api.whatsapp.com/send?phone=6283806620512&text=Saya%20ingin%20memesan%20madu%20Melifera%20500g%20dengan%20harga%20Rp%2080.000" class="btn btn-success">Pesan Sekarang</a>
-              </div>
+          <div class="card">
+            <img src="2.jpg" class="card-img-top" alt="Madu 1">
+            <div class="card-body">
+              <h5 class="card-title">Madu Melifera 500g</h5>
+              <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
+              <p class="card-text"><strong>Harga: Rp 80.000</strong></p>
+              <a href="https://api.whatsapp.com/send?phone=6283806620512&text=Saya%20ingin%20memesan%20madu%20Melifera%20500g%20dengan%20harga%20Rp%2080.000" class="btn btn-success">Pesan Sekarang</a>
             </div>
-      </div>
-      <div class="col mt-4">
-        <div class="card">
-          <img src="2.jpg" class="card-img-top" alt="Madu 2">
-          <div class="card-body">
-            <h5 class="card-title">Madu Melifera 1kg</h5>
-            <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
-            <p class="card-text"><strong>Harga: Rp 175.000</strong></p>
-            <a href="https://api.whatsapp.com/send?phone=6283806620512&text=Saya%20ingin%20memesan%20madu%20Melifera%201kg%20dengan%20harga%20Rp%20175.000" class="btn btn-success">Pesan Sekarang</a>
           </div>
         </div>
+
+        <!-- Product Card 2 -->
+        <div class="col mt-4">
+          <div class="card">
+            <img src="2.jpg" class="card-img-top" alt="Madu 2">
+            <div class="card-body">
+              <h5 class="card-title">Madu Melifera 1kg</h5>
+              <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
+              <p class="card-text"><strong>Harga: Rp 175.000</strong></p>
+              <a href="https://api.whatsapp.com/send?phone=6283806620512&text=Saya%20ingin%20memesan%20madu%20Melifera%201kg%20dengan%20harga%20Rp%20175.000" class="btn btn-success">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mt-4">
+          <h3>Alamat kami</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6500828633225!2d107.59682717427192!3d-6.932359893067532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e89f167adb45%3A0xc0762dc8f49d412e!2sJl.%20Lio%20Genteng%20No.71%2C%20Panjunan%2C%20Kec.%20Astanaanyar%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040242!5e0!3m2!1sid!2sid!4v1717117976158!5m2!1sid!2sid" width="330" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
-    
   </div>
 
   <!-- Floating Button -->
-  <a href="https://api.whatsapp.com/send?phone=6283806620512" class="floating-btn" target="_blank" title="Pesan Sekarang"><img src="pngwing.com (1).png" alt="" width="270px" height="170px">
-    <i class="fa fa-whatsapp"></i> Pesan Sekarang
+  <a href="https://api.whatsapp.com/send?phone=6283806620512" class="floating-btn" target="_blank" title="Pesan Sekarang">
+    <img src="pngwing.com (1).png" alt="" height="100px" width="200px">
+    <i class="fa fa-whatsapp"></i>
   </a>
+  <footer style="background-color: black; color: #fff; padding: 20px 0; text-align: center; border:  #f1ecec solid 1px;;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Tentang Kami</h4>
+                <p>Kami adalah perusahaan yang bergerak di bidang penjualan madu yang dijamin kemurniannya 100%.</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Kontak</h4>
+                <p>Email: bayuwisnu9294@gmail.com</p>
+                <p>Telepon: +6285879104332</p>
+                <p>Alamat: Jl. Liogenteng No.71, Bandung, Indonesia</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Ikuti Kami</h4>
+                <p>
+                    <a href="https://facebook.com" style="color: #fff; text-decoration: none ; margin-right: 10px;">Facebook</a>
+                    <a href="https://twitter.com" style="color: #fff; text-decoration: none; margin-right: 10px;">Twitter</a>
+                    <a href="https://instagram.com" style="color: #fff; text-decoration: none;">Instagram</a>
+                </p>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #444; padding-top: 20px; margin-top: 20px;">
+            <p>&copy; 2024 Perusahaan madu melifera. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
