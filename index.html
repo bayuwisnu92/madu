@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Madu Murni Melifera</title>
-  <link rel="icon" href="lebahmadu.jpeg" type="image/png">
+  <link rel="icon" href="lebahmadu.png" type="image/png">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
@@ -68,7 +68,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom">
     <a class="navbar-brand" href="#">
-      <img src="lebahmadu.jpeg" alt="Logo" width="50" height="30">
+      <img src="lebahmadu.png" alt="Logo" width="50" height="30">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -77,7 +77,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Madu Melifera<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#manfaatmadu">Manfaat Madu</a>
@@ -123,23 +123,29 @@
         <div class="card mb-4">
           <img src="2.jpg" class="card-img-top" alt="Madu 1">
           <div class="card-body">
-            <h5 class="card-title">Madu Melifera 500g</h5>
-            <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
-            <p class="card-text"><strong>Harga: Rp 80.000</strong></p>
-            <a href="https://api.whatsapp.com/send?phone=6283806620512&text=Saya%20ingin%20memesan%20madu%20Melifera%20500g%20dengan%20harga%20Rp%2080.000" class="btn btn-success">Pesan Sekarang</a>
+              <h5 class="card-title">Madu Melifera 500g</h5>
+              <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
+              <p class="card-text"><strong>Harga: Rp 80.000</strong></p>
+              <div class="input-group mb-3">
+                  <input type="number" class="form-control" id="quantity1" placeholder="Jumlah" min="1" value="1">
+              </div>
+              <a href="#" class="btn btn-success" onclick="orderNow('Madu Melifera 500g', 80000, document.getElementById('quantity1').value)">Pesan Sekarang</a>
           </div>
-        </div>
-
-        <!-- Product Card 2 -->
-        <div class="card mb-4">
+      </div>
+      
+      <!-- Product Card 2 -->
+      <div class="card mb-4">
           <img src="2.jpg" class="card-img-top" alt="Madu 2">
           <div class="card-body">
-            <h5 class="card-title">Madu Melifera 1kg</h5>
-            <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
-            <p class="card-text"><strong>Harga: Rp 175.000</strong></p>
-            <a href="https://api.whatsapp.com/send?phone=6283806620512&text=Saya%20ingin%20memesan%20madu%20Melifera%201kg%20dengan%20harga%20Rp%20175.000" class="btn btn-success">Pesan Sekarang</a>
+              <h5 class="card-title">Madu Melifera 1kg</h5>
+              <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
+              <p class="card-text"><strong>Harga: Rp 175.000</strong></p>
+              <div class="input-group mb-3">
+                  <input type="number" class="form-control" id="quantity2" placeholder="Jumlah" min="1" value="1">
+              </div>
+              <a href="#" class="btn btn-success" onclick="orderNow('Madu Melifera 1kg', 175000, document.getElementById('quantity2').value)">Pesan Sekarang</a>
           </div>
-        </div>
+      </div>
         
         <div class="card mb-4">
           <div class="card-body">
@@ -157,8 +163,8 @@
     
     <i class="fa fa-whatsapp"><img src="pngwing.com (3).png" alt="" width="70px" height="70px"></i>
   </a>
-  <div class="container">
-    <footer style="background-color: black; color: #fff; padding: 20px 0; text-align: center;box-shadow: #ddd 0px 1px 1px 1px;">
+  <div class="container mt-4">
+    <footer style="background-color: black; color: #fff; padding: 20px 0; text-align: center;">
       <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
           <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
               <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
@@ -200,6 +206,14 @@
     function pesanSekarang() {
       window.location.href = 'https://api.whatsapp.com/send?phone=6283806620512';
     }
+
+    function orderNow(product, price, quantity) {
+    const total = price * quantity;
+    const message = `Saya ingin memesan ${product} sebanyak ${quantity} dengan total harga Rp ${total}`;
+    const phone = '6283806620512';
+    const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+}
   </script>
 </body>
 </html>
