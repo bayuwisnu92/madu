@@ -7,6 +7,7 @@
   <link rel="icon" href="lebahmadu.png" type="image/png">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
   <style>
@@ -32,8 +33,8 @@
     .navbar-custom {
       background-color: rgb(8, 1, 1);
       top: 0;
-      position: sticky;
-      z-index: 1000;
+      /* position: sticky;
+      z-index: 1000; */
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     }
     .navbar-custom .navbar-brand,
@@ -62,6 +63,9 @@
       background-color: #fff;
       color: #dd1515;
     }
+    .hidden {
+            display: none;
+        }
   </style>
 </head>
 <body>
@@ -70,8 +74,8 @@
     <a class="navbar-brand" href="#">
       <img src="lebahmadu.png" alt="Logo" width="50" height="30">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+      <span  class="bi bi-three-dots"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -97,12 +101,16 @@
         <div class="mb-4">
           <img src="1.jpg" class="img-fluid" alt="Madu">
         </div>
-        <h1>Madu Melifera</h1>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indonesia telah dikenal memiliki berbagai jenis lebah lokal. Salah satu lebah lokal yang dikenal masyarakat adalah lebah madu jenis Apis mellifera spp. Lebah madu menghasilkan beberapa produk yang memiliki kegunaan baik untuk lebah itu sendiri maupun untuk manusia. Hasil produknya antara lain madu, royal jelly, tepung sari atau polen, lem lebah atau propolis, malam lebah atau beeswax, dan racun lebah atau beevenom. Kandungan aktif pada madu terdiri dari polyphenolic compound lebih dari 150 substansi termasuk phenolic acid, flavonoids, flavonols, catechins, dan derivate cinnamic acid.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flavonoid merupakan senyawa kimia yang bersifat antibakteri, antifungal, antiviral, antioksidan dan anti inflamasi. Flavonoid juga memiliki peran dalam melindungi tulang melalui mekanisme: i) aktivasi antioksidan, ii) agen anti inflamasi yang berkorelasi pada cedera tulang, iii) agen pro-osteoblastik, iv) antiosteoklastogenesis, v) melalui tindakan osteoimunologi. Polifenol dan saponin juga berpengaruh pada aktivasi osteoblas yang mengarah ke perbaikan tulang.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tulang manusia sebagai bagian dari sistem gerak adalah jaringan yang kaku dan kuat, dengan salah satu fungsi menopang tubuh. Namun, bila mendapat tekanan dari luar yang melebihi kekuatannya, tulang dapat patah. Kondisi ini yang kemudian disebut dengan fraktur atau patah tulang. Tekanan dari luar tersebut umumnya terjadi saat Anda mengalami jatuh, kecelakaan, atau bentuk cedera lainnya. Namun, penyebab fraktur juga bisa berupa kondisi medis tertentu yang melemahkan tulang, seperti osteoporosis. Osteoporosis saat ini menjadi salah satu masalah kesehatan global. Bahkan, Osteoporosis telah menjadi 10 penyakit degeneratif teratas di dunia oleh Organisasi Kesehatan Dunia (WHO). Pasien osteoporosis memiliki peningkatan resiko patah tulang 2 hingga 3 kali lipat lebih besar dibandingkan dengan tulang normal jika terjadi trauma ringan.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada dasarnya, semua makanan yang sehat dan bergizi mampu membantu pemulihan kondisi patah tulang atau gangguan pada struktur tulang yang Anda alami. Namun, ada beberapa makanan dengan zat gizi tertentu yang diperlukan dalam jumlah lebih agar kondisi tulang Anda cepat membaik. Mengonsumsi makanan yang bernutrisi tinggi untuk tulang akan sangat mendukung proses pemulihan patah tulang yang tengah Anda alami.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dilatarbelakangi permasalahan tersebut, Dr. Dian Agustin Wahjuningrum, drg.,SpKG(K) melakukan sebuah penelitian. Hasilnya menggembirakan, ternyata madu lebah Apis Melifera berpotensi menjadi obat anti-osteoporosis. “Madu mengandung α-Cyclodextrin yang memiliki efek prebiotik menurunkan aktivitas penyerapan jaringan tulang,” jelasnya. Penelitian yang dilakukan dosen Fakultas Kedokteran Gigi (FKG) Universitas Airlangga (UNAIR) itu telah diujikan pada hewan tikus yang diambil indung telurnya sebagai model menopause. Sehingga terjadi penurunan esterogen secara drastis dan memicu osteoporosis. Dari hasil penelitian, diketahui suplemen madu Apis Melifera dapat menghambat penurunan ketebalan tulang kortikal dan memperbaiki kerusakan tulang. Sehingga tulang tidak mudah patah. “Pemberian madu 2g/Kg berat badan terbukti mampu mencegah penurunan densitas tulang dan meningkatkan kekuatan tulang sehingga tidak mudah patah atau retak,” katanya. Hal ini membuka peluang pemanfaatan Madu Apis Melifera sebagai agen perbaikan tulang.</p>
+        <div class="container mt-5">
+          <h1 id="toggle-heading" class="text-primary" style="cursor: pointer;">Madu Melifera</h1>
+          <div id="content" class="mt-3">
+              <p>Indonesia telah dikenal memiliki berbagai jenis lebah lokal. Salah satu lebah lokal yang dikenal masyarakat adalah lebah madu jenis Apis mellifera spp. Lebah madu menghasilkan beberapa produk yang memiliki kegunaan baik untuk lebah itu sendiri maupun untuk manusia. Hasil produknya antara lain madu, royal jelly, tepung sari atau polen, lem lebah atau propolis, malam lebah atau beeswax, dan racun lebah atau beevenom. Kandungan aktif pada madu terdiri dari polyphenolic compound lebih dari 150 substansi termasuk phenolic acid, flavonoids, flavonols, catechins, dan derivate cinnamic acid.</p>
+              <p>Flavonoid merupakan senyawa kimia yang bersifat antibakteri, antifungal, antiviral, antioksidan dan anti inflamasi. Flavonoid juga memiliki peran dalam melindungi tulang melalui mekanisme: i) aktivasi antioksidan, ii) agen anti inflamasi yang berkorelasi pada cedera tulang, iii) agen pro-osteoblastik, iv) antiosteoklastogenesis, v) melalui tindakan osteoimunologi. Polifenol dan saponin juga berpengaruh pada aktivasi osteoblas yang mengarah ke perbaikan tulang.</p>
+              <p>Tulang manusia sebagai bagian dari sistem gerak adalah jaringan yang kaku dan kuat, dengan salah satu fungsi menopang tubuh. Namun, bila mendapat tekanan dari luar yang melebihi kekuatannya, tulang dapat patah. Kondisi ini yang kemudian disebut dengan fraktur atau patah tulang. Tekanan dari luar tersebut umumnya terjadi saat Anda mengalami jatuh, kecelakaan, atau bentuk cedera lainnya. Namun, penyebab fraktur juga bisa berupa kondisi medis tertentu yang melemahkan tulang, seperti osteoporosis. Osteoporosis saat ini menjadi salah satu masalah kesehatan global. Bahkan, Osteoporosis telah menjadi 10 penyakit degeneratif teratas di dunia oleh Organisasi Kesehatan Dunia (WHO). Pasien osteoporosis memiliki peningkatan resiko patah tulang 2 hingga 3 kali lipat lebih besar dibandingkan dengan tulang normal jika terjadi trauma ringan.</p>
+              <p>Pada dasarnya, semua makanan yang sehat dan bergizi mampu membantu pemulihan kondisi patah tulang atau gangguan pada struktur tulang yang Anda alami. Namun, ada beberapa makanan dengan zat gizi tertentu yang diperlukan dalam jumlah lebih agar kondisi tulang Anda cepat membaik. Mengonsumsi makanan yang bernutrisi tinggi untuk tulang akan sangat mendukung proses pemulihan patah tulang yang tengah Anda alami.</p>
+              <p>Dilatarbelakangi permasalahan tersebut, Dr. Dian Agustin Wahjuningrum, drg.,SpKG(K) melakukan sebuah penelitian. Hasilnya menggembirakan, ternyata madu lebah Apis Melifera berpotensi menjadi obat anti-osteoporosis. “Madu mengandung α-Cyclodextrin yang memiliki efek prebiotik menurunkan aktivitas penyerapan jaringan tulang,” jelasnya. Penelitian yang dilakukan dosen Fakultas Kedokteran Gigi (FKG) Universitas Airlangga (UNAIR) itu telah diujikan pada hewan tikus yang diambil indung telurnya sebagai model menopause. Sehingga terjadi penurunan esterogen secara drastis dan memicu osteoporosis. Dari hasil penelitian, diketahui suplemen madu Apis Melifera dapat menghambat penurunan ketebalan tulang kortikal dan memperbaiki kerusakan tulang. Sehingga tulang tidak mudah patah. “Pemberian madu 2g/Kg berat badan terbukti mampu mencegah penurunan densitas tulang dan meningkatkan kekuatan tulang sehingga tidak mudah patah atau retak,” katanya. Hal ini membuka peluang pemanfaatan Madu Apis Melifera sebagai agen perbaikan tulang.</p>
+          </div>
+      </div>
         <h1>Rangkuman Manfaat Madu Melifera</h1>
         <ul>
           <li>Antibakteri, antifungal, antiviral, antioksidan, dan anti inflamasi.</li>
@@ -117,46 +125,49 @@
         </ul>
       </div>
 
-      <!-- Right Column (Product Cards) -->
-      <div class="col-lg-4">
-        <!-- Product Card 1 -->
-        <div class="card mb-4">
-          <img src="2.jpg" class="card-img-top" alt="Madu 1">
-          <div class="card-body">
-              <h5 class="card-title">Madu Melifera 500g</h5>
-              <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
-              <p class="card-text"><strong>Harga: Rp 80.000</strong></p>
-              <div class="input-group mb-3">
-                  <input type="number" class="form-control" id="quantity1" placeholder="Jumlah" min="1" value="1">
-              </div>
-              <a href="#" class="btn btn-success" onclick="orderNow('Madu Melifera 500g', 80000, document.getElementById('quantity1').value)">Pesan Sekarang</a>
+     <!-- Right Column (Product Cards) -->
+<div class="kanan col-lg-4">
+  <div class="row">
+    <div class="col-6" style="height: 500px;">
+      <!-- Product Card 1 -->
+      <div class="card mb-4">
+        <img src="2.jpg" class="card-img-top" alt="Madu 1">
+        <div class="card-body">
+          <h5 class="card-title">Madu Melifera 500g</h5>
+          
+          <p class="card-text"><strong>Harga: Rp 80.000</strong></p>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" id="quantity1" placeholder="Jumlah" min="1" value="1">
           </div>
+          <a href="#" class="btn btn-success" onclick="orderNow('Madu Melifera 500g', 80000, document.getElementById('quantity1').value)">Pesan Sekarang</a>
+        </div>
       </div>
-      
+    </div>
+    <div class="col-6" style="height: 500px;">
       <!-- Product Card 2 -->
       <div class="card mb-4">
-          <img src="2.jpg" class="card-img-top" alt="Madu 2">
-          <div class="card-body">
-              <h5 class="card-title">Madu Melifera 1kg</h5>
-              <p class="card-text">Madu berkualitas tinggi yang dihasilkan oleh lebah Apis Melifera.</p>
-              <p class="card-text"><strong>Harga: Rp 175.000</strong></p>
-              <div class="input-group mb-3">
-                  <input type="number" class="form-control" id="quantity2" placeholder="Jumlah" min="1" value="1">
-              </div>
-              <a href="#" class="btn btn-success" onclick="orderNow('Madu Melifera 1kg', 175000, document.getElementById('quantity2').value)">Pesan Sekarang</a>
+        <img src="2.jpg" class="card-img-top" alt="Madu 2">
+        <div class="card-body">
+          <h5 class="card-title">Madu Melifera 1kg</h5>
+          
+          <p class="card-text"><strong>Harga: Rp 175.000</strong></p>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" id="quantity2" placeholder="Jumlah" min="1" value="1">
           </div>
-      </div>
-        
-        <div class="card mb-4">
-          <div class="card-body">
-            <h3>Alamat kami</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6500828633225!2d107.59682717427192!3d-6.932359893067532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e89f167adb45%3A0xc0762dc8f49d412e!2sJl.%20Lio%20Genteng%20No.71%2C%20Panjunan%2C%20Kec.%20Astanaanyar%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040242!5e0!3m2!1sid!2sid!4v1717117976158!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+          <a href="#" class="btn btn-success" onclick="orderNow('Madu Melifera 1kg', 175000, document.getElementById('quantity2').value)">Pesan Sekarang</a>
         </div>
-
       </div>
     </div>
   </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h3>Alamat kami</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6500828633225!2d107.59682717427192!3d-6.932359893067532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e89f167adb45%3A0xc0762dc8f49d412e!2sJl.%20Lio%20Genteng%20No.71%2C%20Panjunan%2C%20Kec.%20Astanaanyar%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040242!5e0!3m2!1sid!2sid!4v1717117976158!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+
 
   <!-- Floating Button -->
   <a href="https://api.whatsapp.com/send?phone=6283806620512" class="floating-btn" target="_blank" title="Pesan Sekarang">
@@ -214,6 +225,14 @@
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
 }
+// document.getElementById('toggle-heading').addEventListener('click', function() {
+//         var content = document.getElementById('content');
+//         if (content.classList.contains('hidden')) {
+//             content.classList.remove('hidden');
+//         } else {
+//             content.classList.add('hidden');
+//         }
+//     });
   </script>
 </body>
 </html>

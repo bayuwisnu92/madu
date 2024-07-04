@@ -3,11 +3,18 @@ body{
     color: white;
 }
 .card-title{
-    color: white;
+    color: black;
 }
 .card-text{
-    color: white;
+    color: black;
 }
-.card-body{
-    background-color: black;
+
+   
+.kanan{
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+.card{
+    padding: 5px;
 }
